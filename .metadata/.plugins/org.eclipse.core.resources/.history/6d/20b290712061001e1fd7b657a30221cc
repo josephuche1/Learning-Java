@@ -1,0 +1,16 @@
+/*
+ * Name: Uche Joseph
+ * Student ID: U221N1068
+ * TODO  A program that calculates and displays the conversion of an entered
+number of dollars into currency denominations -- 20s, 10s, 5s, and 1s*/
+
+import java.util.Scanner;
+
+public class MinutesConversion {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

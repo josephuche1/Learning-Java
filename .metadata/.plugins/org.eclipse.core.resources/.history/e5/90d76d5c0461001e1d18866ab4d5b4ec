@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Eggs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//        double num;
+//        Scanner keyboard = new Scanner(System.in);
+//        num = keyboard.nextDouble();	
+//        System.out.println("The number is "+ num);
+		Scanner keyboard = new Scanner(System.in);
+        double perDozen = 3.25;
+        double perEgg = 0.45;
+        int numOfEggs;
+        
+        System.out.print("Please enter the number of eggs to order: ");
+        numOfEggs = keyboard.nextInt();
+        System.out.println(numOfEggs);
+
+}

@@ -1,0 +1,14 @@
+/*
+ * Name: Uche Joseph
+ * Student ID: U221N1068
+ * TODO A program that accepts the number of each type of meal ordered and display the total money collected for adult meals, 
+ * children’s meals, and all meals*/
+
+public class ChiliToGo {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
