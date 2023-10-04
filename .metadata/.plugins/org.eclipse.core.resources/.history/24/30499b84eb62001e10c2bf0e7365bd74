@@ -8,6 +8,7 @@ public class SammysRentalPrice {
 		
         double perHourKayaksAndCanoes = 40;
         double perHourBeachChairAndUmbrella = 20;
+        double perMinuteBeachChairAndUmbrella = 0.55;
         double totalPrice;
         double totalPriceHours;
         double totalPriceMinutes;
@@ -43,18 +44,11 @@ public class SammysRentalPrice {
         		totalPriceMinutes = 0.5 * perHourKayaksAndCanoes;
         	}
         }
-        else if(option  == 2) {
-        	totalPriceHours = hours * perHourBeachChairAndUmbrella;
-        	if(minutes < 30) {
-        		totalPriceMinutes = (minutes%30) * 0.55;
-        		minutes -= minutes%30;
-        		totalPriceMinutes += 0.5 * perHourBeachChairAndUmbrella;
-        	}
-        	else if(minutes == 30) {
-        		totalPriceMinutes = 0.5 * perHourBeachChairAndUmbrella;
-        	}
-        }
-         
+        
+        
+        
+       
+        
 	}
 
 }
