@@ -9,8 +9,8 @@ public class SammysRentalPrice {
         double perHourKayaksAndCanoes = 40;
         double perHourBeachChairAndUmbrella = 20;
         double totalPrice;
-        double totalPriceHours = 0;
-        double totalPriceMinutes = 0;
+        double totalPriceHours;
+        double totalPriceMinutes;
         int hours;
         int minutes;
         int option;
@@ -24,10 +24,8 @@ public class SammysRentalPrice {
         System.out.print("Enter option: ");
         option = keyboard.nextInt();
   
-        System.out.println("How long:  ");
-        System.out.println("Hours: ");
+        System.out.print("How long:  ");
         hours = keyboard.nextInt();
-        System.out.println("Minutes: ");
         minutes = keyboard.nextInt();
         while(minutes < 30 && hours == 0) {
         	System.out.print("Minutes cannot be less than: ");
@@ -56,11 +54,7 @@ public class SammysRentalPrice {
         		totalPriceMinutes = 0.5 * perHourBeachChairAndUmbrella;
         	}
         }
-        
-        totalPrice = totalPriceHours + totalPriceMinutes;
-        
-        System.out.println("The total Price: "+totalPrice);
-        keyboard.close();
+         
 	}
 
 }

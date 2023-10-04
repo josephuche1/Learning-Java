@@ -24,7 +24,7 @@ public class SammysRentalPrice {
         System.out.print("Enter option: ");
         option = keyboard.nextInt();
   
-        System.out.println("How long:  ");
+        System.out.print("How long:  ");
         System.out.println("Hours: ");
         hours = keyboard.nextInt();
         System.out.println("Minutes: ");

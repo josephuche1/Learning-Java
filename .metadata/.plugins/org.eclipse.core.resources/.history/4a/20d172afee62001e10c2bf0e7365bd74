@@ -24,10 +24,8 @@ public class SammysRentalPrice {
         System.out.print("Enter option: ");
         option = keyboard.nextInt();
   
-        System.out.println("How long:  ");
-        System.out.println("Hours: ");
+        System.out.print("How long:  ");
         hours = keyboard.nextInt();
-        System.out.println("Minutes: ");
         minutes = keyboard.nextInt();
         while(minutes < 30 && hours == 0) {
         	System.out.print("Minutes cannot be less than: ");
@@ -60,7 +58,6 @@ public class SammysRentalPrice {
         totalPrice = totalPriceHours + totalPriceMinutes;
         
         System.out.println("The total Price: "+totalPrice);
-        keyboard.close();
 	}
 
 }
