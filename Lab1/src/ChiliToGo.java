@@ -40,6 +40,7 @@ public class ChiliToGo {
 		double profit = total - totalProductionCost;
 		
 		System.out.println("Total Profit: $"+profit);
+		keyboard.close();
 	}
 
 }

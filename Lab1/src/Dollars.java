@@ -44,6 +44,7 @@ public class Dollars {
         System.out.println("10s: "+count10s);
         System.out.println("5s: "+count5s);
         System.out.println("1s: "+count1s);
+        keyboard.close();
 	}
 
 }

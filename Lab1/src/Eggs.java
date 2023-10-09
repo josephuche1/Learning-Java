@@ -27,6 +27,8 @@ public class Eggs {
         System.out.println("You have ordered "+numOfEggs+". That's "+dozens+" dozen at $"+perDozen+
         		" per dozen and "+looseEggs+" loose eggs at $"+perEgg+" each for a total of $"+total+".");
         
+        keyboard.close();
+        
 	}
 
 }

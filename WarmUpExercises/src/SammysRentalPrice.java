@@ -1,4 +1,6 @@
-
+/*
+ * Name: Uche Joseph
+ * Student ID: U221N1068*/
 import java.util.Scanner;
 
 public class SammysRentalPrice {

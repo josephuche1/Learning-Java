@@ -20,7 +20,7 @@ public class MinutesConversion {
 		
 		System.out.println(minutes+" minutes equals " +minutesToHours+" hours and equals "+minutesToDays+" days.");
 		
-
+		keyboard.close();
 	}
 
 }
