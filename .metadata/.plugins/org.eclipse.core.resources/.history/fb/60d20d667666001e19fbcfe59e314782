@@ -9,7 +9,7 @@ public class VariableValidity {
 		int count27;
         
 		//invalid variable name
-//        int 67count;
+        int 67count;
 	} 
 
 }
