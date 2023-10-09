@@ -29,22 +29,16 @@ public class PaintCalculator {
 		Scanner keyboard = new Scanner(System.in);
 		PaintCalculator p = new PaintCalculator();
 		
-		System.out.print("Enter the length of the room: ");
+		System.out.print("Enter the length: ");
 		p.length = keyboard.nextDouble();
 		
-		System.out.print("Enter the height of the room: ");
+		System.out.print("Enter the height: ");
 		p.height = keyboard.nextDouble();
 		
 		System.out.print("Enter the width of the room: ");
 		p.width = keyboard.nextDouble();
 		
-		double wallArea = p.calculateWallArea();
 		
-		double numOfGallons = Math.round(p.calculateNumberOfGallons(wallArea));
-		
-		double totalPrice = p.priceCalculator(numOfGallons);
-		
-		System.out.println(", the cost to paint a "+p.length+"-by-"+p.width+" foot room with "+p.height+"-foot ceilings is $"+totalPrice);
 		
 		
 	}

@@ -44,7 +44,7 @@ public class PaintCalculator {
 		
 		double totalPrice = p.priceCalculator(numOfGallons);
 		
-		System.out.println(", the cost to paint a "+p.length+"-by-"+p.width+" foot room with "+p.height+"-foot ceilings is $"+totalPrice);
+		System.out.println(", the cost to paint a"+p.length+"-by-"+p.width+"-foot room with "+p.height+"-foot ceilings is $"+totalPrice);
 		
 		
 	}

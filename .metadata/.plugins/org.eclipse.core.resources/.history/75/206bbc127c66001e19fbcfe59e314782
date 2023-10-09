@@ -1,0 +1,13 @@
+
+public class PaintCalculator {
+	
+    public double length;
+    public double width;
+    public double height;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        
+	}
+
+}
