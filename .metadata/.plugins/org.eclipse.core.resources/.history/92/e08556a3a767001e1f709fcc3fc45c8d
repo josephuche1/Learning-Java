@@ -17,8 +17,6 @@ public class Cat {
 	public static void main(String[] args) {
 		
 		Cat myCat = new Cat();
-		myCat.speak();
-		myCat.isSleeping();
          
 	}
 
