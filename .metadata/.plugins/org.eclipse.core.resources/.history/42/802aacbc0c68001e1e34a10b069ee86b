@@ -1,0 +1,15 @@
+
+public class Port {
+	public int noOfParkingSlots;
+	public int noOfBuildings;
+	public String openSlots;
+	
+	public void setNoOfBuildings(int number) {
+		noOfBuildings = number;
+	}
+	
+	public void timeForNextShipArrival() {
+		System.out.println("Ship A arrives at 11:00PM");
+	}
+
+}
