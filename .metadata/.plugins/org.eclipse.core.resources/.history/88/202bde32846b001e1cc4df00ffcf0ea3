@@ -45,7 +45,7 @@ public class Port {
 		System.out.println("Port Status: Closed");
 	}
 	
-	public void dockShip(Ship ship) { // Method  to dock a ship
+	public void dockShip(Ship ship) {
 		for (int i = numberOfDockedShips; i < dockedShips.length;) {
 			ship.setShipId(i);
 			dockedShips[i] = ship;
@@ -55,7 +55,7 @@ public class Port {
 		System.out.println("Ship docked successfully.");
 	}
 
-	public void undockShip(Ship ship) { // Method to un-dock a ship
+	public void undockShip(Ship ship) {
 		int shipId = ship.getShipId();
 		int newId = 0;
 		if(shipId == -1) {
@@ -72,10 +72,10 @@ public class Port {
 				}
 			}
 			numberOfDockedShips = 0;
-			for(int j = 0; j < tempArray.length; j++) {
+			for(int j = 0; j < dockedShips.length; j++) {
 				this.dockShip(tempArray[j]);
 			}
-			System.out.println(ship.name + " has been undocked.");
+			
 		}
 		
 	}

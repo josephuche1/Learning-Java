@@ -17,7 +17,7 @@ public class Ship {
     	shipId = id;
     }
     
-    public int getShipId() {
+    public int getshipId() {
     	return shipId;
     }
 }
