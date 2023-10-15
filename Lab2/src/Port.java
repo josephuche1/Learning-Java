@@ -7,11 +7,10 @@ public class Port {
 	public int capacity;  // The maximum capacity of the port in terms of cargo or ships
 	public String status; // The current operational status of the port (e.g., "Open," "Closed," "Under maintenance").
 	public int dockCount; // The number of docks available at the port.
-	public Ship[] dockedShips = new Ship[dockCount]; // A array of docked ships
+	public Ship[] dockedShips; // An array of docked ships
 	
-	//private
-	private String[] statusTypes = {"Open", "Closed", "Under Maintenance"}; // An array of all the operational status' that the port can be in.
-	private int numberOfDockedShips = 0;
+	// private
+	private int numberOfDockedShips;
 	
 	// Constructors
 	public Port() { // Constructor without parameters
@@ -20,9 +19,8 @@ public class Port {
 		capacity = 0;
 		status = "Closed";
 		dockCount = 0;
-		for (int i = 0; i < dockedShips.length; i++) {
-		    dockedShips[i] = null;
-		}
+		dockedShips = new Ship[dockCount];
+		numberOfDockedShips = 0;
 	}
 	
 	public Port(String name, String location, int capacity, String status, int dockCount) { // Constructor with parameters
@@ -31,6 +29,8 @@ public class Port {
 		this.capacity = capacity;
 		this.status = status;
 		this.dockCount = dockCount;
+		dockedShips = new Ship[dockCount];
+		numberOfDockedShips = 0;
 	}
 	
 	// Methods/Behaviors
@@ -46,13 +46,13 @@ public class Port {
 	}
 	
 	public void dockShip(Ship ship) { // Method  to dock a ship. Receives a ship object as a parameter
-		for (int i = numberOfDockedShips; i < dockedShips.length;) {
+		for (int i = this.numberOfDockedShips; i < dockCount;) {
 			ship.setShipId(i);
 			dockedShips[i] = ship;
-			numberOfDockedShips ++;
+			this.numberOfDockedShips++;
 			break;
 		}
-		System.out.println("Ship docked successfully.");
+		System.out.println(ship.name + " docked successfully.");
 	}
 
 	public void undockShip(Ship ship) { // Method to un-dock a ship. Receives a ship object as a parameter
@@ -62,18 +62,21 @@ public class Port {
 			System.out.println("This ship is not docked.");
 		}
 		else {
-			Ship[] tempArray = new Ship[dockedShips.length - 1];
-			for(int i = 0; i < dockedShips.length; i++) {
+			Ship[] tempArray = new Ship[dockCount];
+			for(int i = 0; i < dockCount; i++) {
 				if(i == shipId) {
 					continue;
 				}
 				else {
 					tempArray[newId] = dockedShips[i];
 				}
+				newId++;
 			}
 			numberOfDockedShips = 0;
 			for(int j = 0; j < tempArray.length; j++) {
-				this.dockShip(tempArray[j]);
+				if(tempArray[j] != null) {
+					this.dockShip(tempArray[j]);
+				}
 			}
 			System.out.println(ship.name + " has been undocked.");
 		}
@@ -90,6 +93,8 @@ public class Port {
 	}
 	
 	public int getAvailableDocks() { // Method to get the number of unoccupied docks
-		return dockCount - numberOfDockedShips;
+		
+		int available = dockCount - numberOfDockedShips;
+		return available;
 	}
 }

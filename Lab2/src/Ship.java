@@ -13,10 +13,16 @@ public class Ship {
     	shipId = -1;
     	name = "";
     	captain = "";
+    	cargoCapacity = 0;
     }
     
+    public Ship(String name, String captain, int cargoCapacity) {
+    	this.name = name;
+    	this.captain = captain;
+    	this.cargoCapacity = cargoCapacity;
+    }
     
-    //Methods/ Behaviors
+    // Methods/Behaviors
     public void setShipId(int id) {
     	shipId = id;
     }
