@@ -1,9 +1,7 @@
 
 public class Ship {
 	//Public 
-	public String name;
-	public int cargoCapacity;
-	public String captain;
+	
 	
 	// Private
     private int shipId;
@@ -11,8 +9,6 @@ public class Ship {
     // Constructors
     public Ship() {
     	shipId = -1;
-    	name = "";
-    	captain = "";
     }
     
     

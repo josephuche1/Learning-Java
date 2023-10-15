@@ -36,12 +36,12 @@ public class Port {
 	// Methods/Behaviors
 	
 	public void openPort() { // Method to open port
-		status = "Open";
+		status = statusTypes[0];
 		System.out.println("Port Status: Open");
 	}
 	
 	public void closePort() { // Method to close port
-		status = "Closed";
+		status = statusTypes[1];
 		System.out.println("Port Status: Closed");
 	}
 	

@@ -41,7 +41,7 @@ public class Port {
 	}
 	
 	public void closePort() { // Method to close port
-		status = "Closed";
+		status = statusTypes[1];
 		System.out.println("Port Status: Closed");
 	}
 	

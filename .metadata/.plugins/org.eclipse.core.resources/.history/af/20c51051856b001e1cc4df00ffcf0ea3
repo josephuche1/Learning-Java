@@ -12,8 +12,8 @@ public class Port {
 	//private
 	private String[] statusTypes = {"Open", "Closed", "Under Maintenance"}; // An array of all the operational status' that the port can be in.
 	private int numberOfDockedShips = 0;
-	
 	// Constructors
+	
 	public Port() { // Constructor without parameters
 		name = "";
 		location = "";
@@ -36,12 +36,12 @@ public class Port {
 	// Methods/Behaviors
 	
 	public void openPort() { // Method to open port
-		status = "Open";
+		status = statusTypes[0];
 		System.out.println("Port Status: Open");
 	}
 	
 	public void closePort() { // Method to close port
-		status = "Closed";
+		status = statusTypes[1];
 		System.out.println("Port Status: Closed");
 	}
 	
@@ -80,16 +80,12 @@ public class Port {
 		
 	}
 	
-	public boolean checkCapacity(int currentPopulation) { // Method to check if Port is at capacity.
+	public boolean checkCapacity(int currentPopulation) {
 		if(currentPopulation >=  this.capacity) {
 			return true;
 		}
 		else {
 			return false;
 		}
-	}
-	
-	public int getAvailableDocks() { // Method to get the number of unoccupied docks
-		return dockCount - numberOfDockedShips;
 	}
 }
