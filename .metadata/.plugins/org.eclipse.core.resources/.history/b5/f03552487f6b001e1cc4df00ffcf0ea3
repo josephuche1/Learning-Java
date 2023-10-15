@@ -1,0 +1,10 @@
+
+public class Ship {
+	
+    private int shipId;
+    
+    
+    public void setShipId(int id) {
+    	shipId = id;
+    }
+}

@@ -1,0 +1,25 @@
+public class Port {
+	// Parameters
+	
+	public String name;  // The name of the port.
+	public String location; // The geographic location of the port.
+	public int capacity;  // The maximum capacity of the port in terms of cargo or ships
+	public String status; // The current operational status of the port (e.g., "Open," "Closed," "Under maintenance").
+	public int dock_count; // The number of docks available at the port.
+	public int docked_ships[100]; // The number of docked ships
+	
+	// Constructors
+	
+	public Port() {
+		name = "";
+		location = "";
+		capacity = 0;
+		status = "Closed";
+		dock_count = 0;
+		docked_ships[] = {};
+	}
+	
+	public Port(String name, String location, int capacity, String status, int dock_count, int docked_ships) {
+		
+	}
+}
