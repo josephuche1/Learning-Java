@@ -12,9 +12,6 @@ public class TestPort {
 		Ship newShip2 = new Ship("Bon Voyage", "James Bond", 1000);
 		Ship newShip3 = new Ship("Megumi", "Joseph Uche", 3000);
 		
-		// create new Building
-		Buildings newBuild = new Buildings("Mahoraga", 100, 13, 5000, "3:00PM");
-		
 		// Calling Port methods
 		newPort.closePort();
 		newPort.openPort();
@@ -34,9 +31,6 @@ public class TestPort {
 		}
 		
 	    System.out.println("The number of available docks at " + newPort.name+ " is "+newPort.getAvailableDocks());
-	    
-	    newPort.addBuilding(newBuild);
-	    newPort.removeBuilding(newBuild);
 	}
 
 }

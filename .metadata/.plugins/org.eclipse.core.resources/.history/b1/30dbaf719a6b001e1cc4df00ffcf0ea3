@@ -8,12 +8,10 @@ public class Port {
 	public String status; // The current operational status of the port (e.g., "Open," "Closed," "Under maintenance").
 	public int dockCount; // The number of docks available at the port.
 	public Ship[] dockedShips; // An array of docked ships
-	public Buildings[] buildings; // An array of buildings
 	
 	// private
-	private int numberOfDockedShips; // number of docked ships
-	private int numberOfBuildings;  // number of buildings
-	private int maxBuildingCapacity; // the max number of buildings that can fit into the port
+	private int numberOfDockedShips;
+	private int numberOfBuildings;
 	
 	// Constructors
 	public Port() { // Constructor without parameters
@@ -23,27 +21,23 @@ public class Port {
 		status = "Closed";
 		dockCount = 0;
 		dockedShips = new Ship[dockCount];
-		buildings = new Buildings[maxBuildingCapacity];
 		numberOfDockedShips = 0;
 		numberOfBuildings = 0;
-		maxBuildingCapacity = 0;
-	} 
+	}
 	
-	public Port(String name, String location, int capacity, String status, int dockCount, int maxBuildingCapacity) { // Constructor with parameters
+	public Port(String name, String location, int capacity, String status, int dockCount) { // Constructor with parameters
 		this.name = name;
 		this.location = location;
 		this.capacity = capacity;
 		this.status = status;
 		this.dockCount = dockCount;
-		this.maxBuildingCapacity = maxBuildingCapacity;
 		dockedShips = new Ship[dockCount];
-		buildings = new Buildings[maxBuildingCapacity];
 		numberOfDockedShips = 0;
 		numberOfBuildings = 0;
-		
 	}
 	
 	// Methods/Behaviors
+	
 	public void openPort() { // Method to open port
 		status = "Open";
 		System.out.println("Port Status: Open");
@@ -105,42 +99,5 @@ public class Port {
 		
 		int available = dockCount - numberOfDockedShips;
 		return available;
-	}
-	
-	public void addBuilding(Buildings newBuild) { // method to add a building to port
-		for (int i = this.numberOfDockedShips; i < dockCount;) {
-			newBuild.setBuildingId(i);
-			buildings[i] = newBuild;
-			this.numberOfBuildings++;
-			break;
-		}
-		System.out.println(newBuild.name + " built successfully.");
-	}
-	
-	public  void removeBuilding(Buildings building) {
-		int id = building.getBuildingId();
-		int newId = 0;
-		if(id == -1) {
-			System.out.println("This building is has not been built here.");
-		}
-		else {
-			Buildings[] tempArray = new Buildings[maxBuildingCapacity];
-			for(int i = 0; i < maxBuildingCapacity; i++) {
-				if(i == id) {
-					continue;
-				}
-				else {
-					tempArray[newId] = buildings[i];
-				}
-				newId++;
-			}
-			numberOfBuildings = 0;
-			for(int j = 0; j < tempArray.length; j++) {
-				if(tempArray[j] != null) {
-					this.addBuilding(tempArray[j]);
-				}
-			}
-			System.out.println(building.name + " has been demolished.");
-		}
 	}
 }

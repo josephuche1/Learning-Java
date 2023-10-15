@@ -25,12 +25,16 @@ public class Buildings {
 		this.id = -1;
 	}
 	
-	public void setBuildingId(int id) {
-    	this.id = id;
-    }
+	public int getNoOfShoppingPlazas() {
+		return noOfShoppingPlazas;
+	}
 	
-	public int getBuildingId() {
-    	return this.id;
-    }
+	public int getNoOfFloors() {
+		return this.noOfFloors;
+	}
+	
+	public int printCapacity() {
+		return this.capacity;
+	}
 
 }

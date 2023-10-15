@@ -114,17 +114,17 @@ public class Port {
 			this.numberOfBuildings++;
 			break;
 		}
-		System.out.println(newBuild.name + " built successfully.");
+		System.out.println(newBuild.name + " docked successfully.");
 	}
 	
 	public  void removeBuilding(Buildings building) {
 		int id = building.getBuildingId();
 		int newId = 0;
 		if(id == -1) {
-			System.out.println("This building is has not been built here.");
+			System.out.println("This building is not docked.");
 		}
 		else {
-			Buildings[] tempArray = new Buildings[maxBuildingCapacity];
+			buildings[] tempArray = new buildings[maxBuildingCapacity];
 			for(int i = 0; i < maxBuildingCapacity; i++) {
 				if(i == id) {
 					continue;
@@ -134,13 +134,13 @@ public class Port {
 				}
 				newId++;
 			}
-			numberOfBuildings = 0;
+			maxBuildingCapacity = 0;
 			for(int j = 0; j < tempArray.length; j++) {
 				if(tempArray[j] != null) {
 					this.addBuilding(tempArray[j]);
 				}
 			}
-			System.out.println(building.name + " has been demolished.");
+			System.out.println(building.name + " has been undocked.");
 		}
 	}
 }

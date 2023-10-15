@@ -20,7 +20,6 @@ public class Ship {
     	this.name = name;
     	this.captain = captain;
     	this.cargoCapacity = cargoCapacity;
-    	this.shipId = -1;
     }
     
     // Methods/Behaviors

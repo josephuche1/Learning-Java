@@ -14,7 +14,7 @@ public class Buildings {
 		this.noOfShoppingPlazas = 0;
 		this.capacity = 0;
 		this.timeOfClosure = "";
-		this.id = -1;
+		this.id = 0;
 	}
 	public Buildings(String name, int noOfFloors, int noOfShoppingPlazas, int capacity, String timeOfClosure) {
 		this.name = name;
@@ -22,15 +22,19 @@ public class Buildings {
 		this.noOfShoppingPlazas = noOfShoppingPlazas;
 		this.capacity = capacity;
 		this.timeOfClosure = timeOfClosure;
-		this.id = -1;
+		this.id = 0;
 	}
 	
-	public void setBuildingId(int id) {
-    	this.id = id;
-    }
+	public int getNoOfShoppingPlazas() {
+		return noOfShoppingPlazas;
+	}
 	
-	public int getBuildingId() {
-    	return this.id;
-    }
+	public int getNoOfFloors() {
+		return this.noOfFloors;
+	}
+	
+	public int printCapacity() {
+		return this.capacity;
+	}
 
 }

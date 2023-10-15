@@ -114,7 +114,7 @@ public class Port {
 			this.numberOfBuildings++;
 			break;
 		}
-		System.out.println(newBuild.name + " built successfully.");
+		System.out.println(newBuild.name + " docked successfully.");
 	}
 	
 	public  void removeBuilding(Buildings building) {
@@ -134,7 +134,7 @@ public class Port {
 				}
 				newId++;
 			}
-			numberOfBuildings = 0;
+			maxBuildingCapacity = 0;
 			for(int j = 0; j < tempArray.length; j++) {
 				if(tempArray[j] != null) {
 					this.addBuilding(tempArray[j]);

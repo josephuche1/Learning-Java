@@ -5,15 +5,12 @@ public class TestPort {
 		// TODO Auto-generated method stub
 		
 		// Create new Port
-		Port newPort = new Port("Jujutsu Kaisen", "Japan", 1000, "Open", 100, 200);
+		Port newPort = new Port("Jujutsu Kaisen", "Japan", 1000, "Open", 100);
 		
 		// Create new ships
 		Ship newShip = new Ship("The best ship", "Jack Sparrow", 500);
 		Ship newShip2 = new Ship("Bon Voyage", "James Bond", 1000);
 		Ship newShip3 = new Ship("Megumi", "Joseph Uche", 3000);
-		
-		// create new Building
-		Buildings newBuild = new Buildings("Mahoraga", 100, 13, 5000, "3:00PM");
 		
 		// Calling Port methods
 		newPort.closePort();
@@ -34,9 +31,6 @@ public class TestPort {
 		}
 		
 	    System.out.println("The number of available docks at " + newPort.name+ " is "+newPort.getAvailableDocks());
-	    
-	    newPort.addBuilding(newBuild);
-	    newPort.removeBuilding(newBuild);
 	}
 
 }

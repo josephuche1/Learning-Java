@@ -34,9 +34,6 @@ public class TestPort {
 		}
 		
 	    System.out.println("The number of available docks at " + newPort.name+ " is "+newPort.getAvailableDocks());
-	    
-	    newPort.addBuilding(newBuild);
-	    newPort.removeBuilding(newBuild);
 	}
 
 }
