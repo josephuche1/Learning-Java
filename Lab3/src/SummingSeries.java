@@ -34,7 +34,7 @@ public class SummingSeries {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		SummingSeries newSum = new SummingSeries(5);
-       
+        
 	}
 
 }
