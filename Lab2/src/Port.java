@@ -36,10 +36,10 @@ public class Port {
 		this.status = status;
 		this.dockCount = dockCount;
 		this.maxBuildingCapacity = maxBuildingCapacity;
-		dockedShips = new Ship[dockCount];
-		buildings = new Buildings[maxBuildingCapacity];
-		numberOfDockedShips = 0;
-		numberOfBuildings = 0;
+		this.dockedShips = new Ship[dockCount];
+		this.buildings  = new Buildings[maxBuildingCapacity];
+		this.numberOfDockedShips = 0;
+		this.numberOfBuildings = 0;
 		
 	}
 	
