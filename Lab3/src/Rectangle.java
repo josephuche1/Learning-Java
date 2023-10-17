@@ -32,4 +32,29 @@ public class Rectangle {
      public String getColor() {
     	 return this.color;
      }
+     
+     // Mutator
+     public void setWidth(double width) {
+    	 this.width = width;
+     }
+     
+     public void setHeight(double height) {
+    	 this.height = height;
+     }
+     
+     public void setColor(String color) {
+    	 this.color = color;
+     }
+     
+     // Behavior
+     public double getArea() {
+    	 double area = this.height * this.width;
+    	 return area;
+     }
+     
+     public double getPerimeter() {
+    	 double perimeter = (this.height + this.width) * 2;
+    	 return perimeter;
+     }
+     
 }
