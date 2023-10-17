@@ -17,4 +17,19 @@ public class Rectangle {
     	 this.height = height;
     	 this.color = "white";
      }
+     
+     // Methods 
+     
+     // Accessor
+     public double getWidth() {
+    	 return this.width;
+     }
+     
+     public double getHeight() {
+    	 return this.height;
+     }
+     
+     public String getColor() {
+    	 return this.color;
+     }
 }
