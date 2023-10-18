@@ -1,9 +1,9 @@
 
 public class Rectangle {
 	// Parameters
-     public double width;
-     public double height;
-     public String color;
+     private double width;
+     private double height;
+     private String color;
      
      // Constructors
      public Rectangle() {
