@@ -1,9 +1,0 @@
-
-public class TestPort {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Port newPort = new Port("Jujutsu Kaisen", "Japan", 1000, "Open", 100);
-	}
-
-}
