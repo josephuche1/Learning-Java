@@ -7,3 +7,6 @@ public class Art {
     	System.out.println("I'm art_method in Art Class");
     }
 }
+ 
+
+// Do a hierarchical inheritance 
