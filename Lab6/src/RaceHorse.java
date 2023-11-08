@@ -4,6 +4,11 @@ public class RaceHorse extends Horse {
     
     // Setters
     public void setNumberOfRaces(int number) {
-    	
+    	this.numberOfRaces = number;
+    }
+    
+    // Getters
+    public int getNumberOfRaces() {
+    	return this.numberOfRaces;
     }
 }
