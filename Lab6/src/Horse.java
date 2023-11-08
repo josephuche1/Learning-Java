@@ -25,4 +25,9 @@ public class Horse {
 	public int getBirthYear(){
 		return this.birthYear;
 	}
+	
+	// Methods
+	public void methodHorse() {
+		System.out.println("I am methodHorse in Horse class");
+	}
 }
