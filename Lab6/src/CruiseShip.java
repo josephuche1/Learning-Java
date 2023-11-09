@@ -9,6 +9,7 @@ public class CruiseShip extends Ship{
 		this.passengers = p;
 	}
 	
+
 	public void setPassengers(int p) {
 		this.passengers = p;
 	}
@@ -18,7 +19,7 @@ public class CruiseShip extends Ship{
 	}
 	
 	public String toString() {
-		return "My name is "+this.getName()+" and I was built in "+this.getYearBuilt()+". I have " + this.passengers+ "passengers. ";
+		return "My name is "+this.getName()+". I have " + this.passengers+ "passengers. ";
 	}
     
 }
