@@ -4,6 +4,10 @@ public class Horse {
 	private  String color;
 	private int birthYear;
 	
+	public Horse()
+	{
+		System.out.println("I am default constructor of the class Horse");
+	}
 	// Setters
 	public void setName(String name) {
 		this.name = name;
