@@ -19,3 +19,7 @@ public class TestOverloadOverride {
 // I am class A
 // I am class B
 
+// Result after overriding the method
+// I am class A
+// I am the overridden method of class B
+// I am the overridden method of class A
