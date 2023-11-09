@@ -3,6 +3,10 @@ public class Ship {
     private String name;
     private String yearBuilt;
     
+    public Ship() {
+    	System.out.println("I am the Ship - parent class");
+    }
+    
     public Ship(String n, String y) {
     	this.name = n;
     	this.yearBuilt = y;
