@@ -1,8 +1,7 @@
 
 public class Dog extends Animal{
-    public Dog(String name) {
-		super(name);
-	}
+  private String name = "Dog";
+
 	public void bark() {
     	System.out.println("Barking");
     }
@@ -16,10 +15,19 @@ public class Dog extends Animal{
     }
     
     public void method_Animal() {
- 	   System.out.println("I am the method that is void in Dog class");
+ 	   System.out.println("I am Void in Dog class");
    }
    
     public String method_Animal(String w) {
-  	  return "String in Dog class";
+      System.out.println("String in Dog class");
+  	  return w;
+    }
+
+    public String getClassName(){
+         return this.name;
+    }
+
+    public String toString() {
+      return this.getclassName()+" class";
     }
 }

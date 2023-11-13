@@ -1,23 +1,21 @@
 
 public class Animal {
-  private String name;
-  public Animal(String name) {
-	  this.name = name;
+  private String name = "Animal";
+  public Animal() {
 	  System.out.println("I am the Animal class");
   }
-  
-  
-  
   public String method_Animal(String w) {
-	  return "String";
+    System.out.println("String in Animal");
+	  return w;
   }
   
   public boolean method_Animal(boolean b) {
+    System.out.println("Boolean in Animal");
 	  return true;
   }
   
   public void method_Animal() {
-	   System.out.println("I am the method that is void");
+	   System.out.println("Void in Animal");
   }
   
   public String getclassName() {
