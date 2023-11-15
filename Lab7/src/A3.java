@@ -1,3 +1,3 @@
-public class A3 {
+public interface A3 {
     
 }
