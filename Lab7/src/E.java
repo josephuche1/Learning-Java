@@ -1,4 +1,4 @@
 
-public class E extends A2{
+abstract class E extends A2{
 
 }

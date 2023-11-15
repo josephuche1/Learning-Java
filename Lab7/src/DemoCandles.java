@@ -2,7 +2,6 @@
 public class DemoCandles {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Candle newCandle = new Candle();
         ScentedCandle newScentedCandle = new ScentedCandle();
         
