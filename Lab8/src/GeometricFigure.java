@@ -1,6 +1,6 @@
 
 public abstract class GeometricFigure {
-	 public double height;
+	public double height;
      public double width;
      public String figureType;
      public double area;

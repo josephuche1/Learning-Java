@@ -1,3 +1,4 @@
-public abstract class SidedObject {
-     public 
+public interface SidedObject {
+    void printSides();
 }
+
