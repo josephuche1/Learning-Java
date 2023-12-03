@@ -1,6 +1,6 @@
 import java.util.Random;
-public class DemoStudent {
 
+public class StudentDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Random rand = new Random();
@@ -35,5 +35,4 @@ public class DemoStudent {
 		}
 		
 	}
-
 }
