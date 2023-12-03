@@ -27,5 +27,17 @@ public abstract class Student implements ExcellentStudent{
    public double getTuition() {
 	   return this.annualTuition;
    }
+   
+   //other methods
+   public boolean isExcellent(boolean isAttentive, int numOfAs) {
+	   	if (isAttentive && numOfAs == UndergraduateStudent.numOfAs) {
+			return true;
+		} else {
+			return false;
+		}
+   }
+   //abstract method
    public abstract void setTuition();
+
+
 }
