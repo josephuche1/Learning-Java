@@ -5,7 +5,7 @@ public class DemoAnonymousClass {
 		// TODO Auto-generated method stub
         int pounds;
         Scanner input  = new Scanner(System.in);
-        System.out.print("Enter capacity")
+        System.out.print("Enter capacity");
 	}
 
 }
