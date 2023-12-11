@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="Animal"/>
     <fullyQualifiedTypeName name="Client2"/>
     <fullyQualifiedTypeName name="RaceHorse"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>
