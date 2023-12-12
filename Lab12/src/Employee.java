@@ -4,15 +4,12 @@ public class Employee {
     private double hourlyWage;
     
     public Employee(String idNum, double hourlyWage) throws EmployeeException{
-    	try {
-    		this.idNum = idNum;
-    		this.hourlyWage = hourlyWage;
-    		
-    		if(this.hourlyWage < 6 || this.hourlyWage > 50) {
-    			throw(new EmployeeException("Employee Exception: ID Number: \t"+this.idNum+ ", hourlyWage: "+ this.hourlyWage));
-    		}
-    	}catch(EmployeeException err) {
-    		System.out.println(err.getMessage());
-    	}
+    	 if (hourlyWage < 6.00 || hourlyWage > 50.00) {
+             throw new EmployeeException("Invalid hourly wage for employee " + idNum + ": " + hourlyWage);
+         }
+
+         this.idNum = idNum;
+         this.hourlyWage = hourlyWage;
+         System.out.println("Employee " + idNum + " created successfully with hourly wage: $" + hourlyWage);
     }
 }
